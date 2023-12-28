@@ -1,0 +1,92 @@
+<!DOCTYPE {{{ page.doctype || 'html' }}}>
+<html lang="{{ page.language || 'en' }}" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+  <meta charset="{{ page.charset || 'utf-8' }}">
+  <meta name="x-apple-disable-message-reformatting">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no, date=no, address=no, email=no, url=no">
+  <!--[if mso]>
+  <noscript>
+    <xml>
+      <o:OfficeDocumentSettings xmlns:o="urn:schemas-microsoft-com:office:office">
+        <o:PixelsPerInch>96</o:PixelsPerInch>
+      </o:OfficeDocumentSettings>
+    </xml>
+  </noscript>
+  <style>
+    td,th,div,p,a,h1,h2,h3,h4,h5,h6 {font-family: "Segoe UI", sans-serif; mso-line-height-rule: exactly;}
+  </style>
+  <![endif]-->
+  <if condition="page.title">
+    <title>{{{ page.title }}}</title>
+  </if>
+  <style>
+    {{{ page.css }}}
+  </style>
+  <stack name="head" />
+</head>
+<body class="m-0 p-0 w-full [word-break:break-word] [-webkit-font-smoothing:antialiased] {{ page.bodyClass || 'bg-white '}}">
+  <if condition="page.preheader">
+    <div class="hidden">
+      {{{ page.preheader }}}
+      <each loop="item in Array.from(Array(150))">&#8199;&#65279;&#847; </each>
+    </div>
+  </if>
+  <div
+    align="center"
+    role="article"
+    aria-roledescription="email"
+    lang="{{ page.language || 'en' }}"
+    class="sm:px-4 {{ page.bodyClass || 'bg-white' }}"
+    aria-label="{{{ page.title || '' }}}"
+  >
+    <x-spacer height="40px" />
+
+    <x-spacer height="40px" />
+
+    <table class="font-sans">
+      <tr>
+        <td class="w-[900px] max-w-full py-8 bg-slate-200 rounded-xl">
+          <table class="w-full">
+            <tr>
+              <td class="text-center">
+                <img src="logo.png" alt="logo">
+              </td>
+            </tr>
+            <tr>
+              <td class="px-8 sm:px-4 max-w-0">
+                <content />
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr role="separator">
+        <td class="leading-10">&zwj;</td>
+      </tr>
+      <tr>
+        <td class="px-8 sm:px-4">
+          <table class="w-full">
+            <tr>
+              <td class="sm:block sm:w-full sm:px-0">
+                <p class="m-0 mb-2 text-sm text-slate-400">
+                  <footer class="relative">
+
+                    <div class="absolute w-full right-8">
+                      <img src="logo.png" width="100">
+                      <p style="margin-top: 12px; color: #6B7280">© 2023 TheBlogger. All Rights Reserved.</p>
+                    </div>
+
+                </footer>
+                </p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+
+    <x-spacer height="40px" />
+  </div>
+</body>
+</html>
