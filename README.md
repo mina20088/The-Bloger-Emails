@@ -11,44 +11,14 @@
 
 # About
 
-This is a Markdown starter project for Maizzle, it shows how to generate HTML emails from Markdown files.
+This is [TheBlogger] website email templates, this will be updated with many other templates ...
 
-See the detailed guide for more information:
+See the details about included templates:
 
-[How to create an HTML email newsletter from Markdown files](https://maizzle.com/guides/markdown-emails)
 
-## Getting Started
-
-Clone this starter:
-
-```bash
-npx degit maizzle/starter-markdown my-project
-```
-
-Install dependencies:
-
-```
-cd my-project
-
-npm install
-```
-
-Start local development:
-
-```
-npm run dev
-```
-
-Build emails for production:
-
-```
-npm run build
-```
-
-## Documentation
-
-Maizzle documentation is available at https://maizzle.com
-
-## License
-
-The Maizzle framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## Included Templates:
+ - Welcome Email Template
+ - Reset Password Template
+ - Rest Password Confirmation Template
+ - Email Verification Template
+ - Email Verification Success Template
