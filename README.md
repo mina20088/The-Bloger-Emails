@@ -1,9 +1,9 @@
 <div align="center">
   <p>
-    <a href="https://maizzle.com" target="_blank">
+    <a href="#" target="_blank">
       <picture>
-        <source media="(prefers-color-scheme: dark)" srcset="https://github.com/maizzle/maizzle/raw/master/.github/logo-dark.svg">
-        <img alt="Maizzle Starter" src="/src/images/logo.png" width="400" height="300" style="max-width: 100%;">
+        <source media="(prefers-color-scheme: dark)" srcset="#">
+        <img alt="TheBloggerImage" src="/src/images/logo.png" width="400" height="300" style="max-width: 100%;">
       </picture>
     </a>
   </p>
